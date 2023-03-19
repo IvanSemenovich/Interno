@@ -1,4 +1,22 @@
-@media (max-width: 1040px) {
+@media (max-width: 1250px) {
+    .testimonial{
+        &__items{
+           
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            margin-top: 15px;
+        }
+    }
+    .projects{
+        &__item{
+            max-width:500px ;
+        }
+    }
+    
+}
+@media (max-width: 1144px) {
     .work{
         &__inner{
             display: flex;
@@ -8,6 +26,7 @@
         }
         &__item{
             margin-top: 40px;
+            
         }
     }
     .about{
@@ -24,6 +43,11 @@
         }
         &__info-text{
             color: #292f36;
+        }
+    }
+    .projects{
+        &__item{
+            max-width:400px ;
         }
     }
 }
@@ -77,6 +101,43 @@
         padding-top: 50px;
     }
 }
+    .brands{
+        &__block{
+            flex-wrap: wrap;
+        }
+        &__block-item{
+            margin: 32px 2px 2px 2px;
+        }
+    }
+    .projects{
+        &__item{
+            max-width:310px ;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .testimonial{
+        &__items{
+            margin-right: 15px;
+        }
+        &__item{
+            max-width: 345px;
+         
+        }
+        &__text{
+            line-height: 22px;
+        }
+        &__item-person-info{
+            font-size: 18px;
+        }
+    }
+    .projects{
+        &__item{
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+    }
 }
 
 
