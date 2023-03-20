@@ -1,37 +1,26 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
-@import 'adaptive';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-.header{
-    max-height: 140px;
-   
-}
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-h2 {
-  vertical-align: center;
-  text-align: center;
-}
-.header{
-
- &__logo{
-  width: 177px;
-  height: 50px;
- }
+.header {
+  max-height: 140px;
 }
 
+.header {
+  &__logo {
+    width: 177px;
+    height: 50px;
+  }
+}
 
 .top-nav {
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
- 
- 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
 
@@ -47,12 +36,12 @@ h2 {
   margin-left: 300px;
   margin: 56px 0px 58px 0px;
 
-  &__link{
+  &__link {
     font-size: 20px;
     line-height: 25px;
     color: $primaryColorTwo;
     margin-right: 10px;
-   }
+  }
 }
 
 .menu > li {
@@ -87,16 +76,16 @@ h2 {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
-.test{
+.test {
   display: flex;
 }
 
@@ -114,157 +103,122 @@ h2 {
   transform: rotate(-405deg);
 }
 
-
-.footer{
-  &__inner{
+.footer {
+  &__inner {
     display: flex;
     justify-content: space-between;
     height: 370px;
-    margin: 135px 0 207px 0;
-    
+    margin-bottom: 207px;
   }
-  &__logo{
+  &__logo {
     margin-bottom: 18px;
     width: 177px;
     height: 50px;
-
   }
-  &__menu{
+  &__menu {
     display: flex;
     justify-content: space-between;
- 
   }
-  &__menu-links{
-  
+  &__menu-links {
     max-width: 140px;
     line-height: 66px;
     margin-bottom: 9px;
     margin-left: 17px;
     line-height: 66px;
- 
   }
-  &__menu-links-main{
+  &__menu-links-main {
     font-size: 30px;
     @extend %title-font;
-    
   }
-  &__social-icons{
+  &__social-icons {
     display: flex;
     margin-right: 50px;
   }
-  &__social{
+  &__social {
     max-width: 393px;
-   
-   
   }
-  &__social-text{
+  &__social-text {
     line-height: 33px;
     color: $primaryColorTwo;
     margin-bottom: 31px;
   }
-  &__social-link{
+  &__social-link {
     margin-right: 50px;
   }
 
-  &__contacts{
+  &__contacts {
     max-width: 258px;
     margin-top: 15px;
     line-height: 33px;
   }
-  &__contacts-text{
+  &__contacts-text {
     margin: 30px 0 50px 0;
-    
   }
-  &__contacts-email{
+  &__contacts-email {
     margin-bottom: 30px;
-
   }
-  &__nav{
+  &__nav {
     display: flex;
     justify-content: space-between;
   }
-
 }
-.top{
-  &__inner{
+.top {
+  &__inner {
     background-image: url(../images/hero_banner/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     border-bottom-left-radius: 15%;
     height: 1024px;
-    
-
   }
-  &__info{
+  &__info {
     display: flex;
     flex-direction: column;
     max-width: 567px;
     padding-top: 330px;
   }
-  &__title{
+  &__title {
     @extend %title-font;
     font-size: 86px;
     line-height: 106px;
   }
-  &__text{
+  &__text {
     line-height: 33px;
     margin: 9px 0 22px 0;
   }
 
-  &__button{
-    display: flex;
-    align-items: center;
-    width: 220px;
-    height: 75px;
-    background: $primaryColorTwo;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 22px 48px 26px 48px;
-    border-radius: 18px;
-    max-width: 240px;
-    position: relative;
-    cursor: pointer;
-    &::after{
-      content: '';
-      background-image: url(../images/hero_banner/button-arrow.svg);
-      width: 21px;
-      position: absolute;
-      height: 15px;
-      right: 39px;
-
-    }
+  &__button {
+    @extend %defaultButton;
   }
 }
-.work{
-  &__inner{
+.work {
+  &__inner {
     display: flex;
     justify-content: space-around;
     margin: 200px 0 200px 0;
   }
-  &__item{
+  &__item {
     max-width: 358px;
     text-align: center;
     padding-right: 40px;
   }
-  &__item-title{
+  &__item-title {
     @extend %title-font;
     font-size: 25px;
     line-height: 32px;
     margin-bottom: 20px;
   }
-  &__item-text{
+  &__item-text {
     line-height: 33px;
-    color: #4D5053;
+    color: #4d5053;
     margin-bottom: 52px;
   }
-  &__item-link{
+  &__item-link {
     font-size: 18px;
     line-height: 23px;
     font-weight: 600;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       background-image: url(../images/hero_banner/button-arrow.svg);
       height: 15px;
       width: 20px;
@@ -274,107 +228,81 @@ h2 {
     }
   }
 }
-.about{
-  &__inner{
+.about {
+  &__inner {
     display: flex;
     max-height: 700px;
     justify-content: space-between;
     margin: 0 0 200px 0;
   }
 
-  &__info{
-    max-width:472px;
-   
+  &__info {
+    max-width: 472px;
   }
-  &__info-title{
+  &__info-title {
     @extend %title-font;
     font-size: 50px;
     line-height: 63px;
     text-align: left;
     margin-bottom: 33px;
   }
-  &__info-text{
+  &__info-text {
     line-height: 33px;
-    color: #4D5053;
+    color: #4d5053;
     margin-bottom: 45px;
     letter-spacing: 1px;
   }
-  &__info-call{
+  &__info-call {
     display: flex;
     align-items: center;
   }
-  &__info-call-block{
+  &__info-call-block {
     margin-left: 15px;
-    
   }
-  &__info-call-number{
+  &__info-call-number {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
     margin-bottom: 3px;
   }
-  &__info-button{
-    display: flex;
-    align-items: center;
-    width: 240px;
-    height: 75px;
-    background: $primaryColorTwo;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 22px 56px 26px 31px;
-    border-radius: 18px;
-    max-width: 240px;
-    margin: 47px 0 43px 0;
-    cursor: pointer;
-    position: relative;
-    &::after{
-      content: '';
-      background-image: url(../images/hero_banner/button-arrow.svg);
-      width: 21px;
-      position: absolute;
-      height: 15px;
-      right: 39px;
-
-    }
+  &__info-button {
+    @extend %largeButton;
   }
 }
-.testimonial{
-  &__inner{
-    
-    background:  #F4F0EC;
-    margin-bottom:150px ;
+.testimonial {
+  &__inner {
+    background: #f4f0ec;
+    margin-bottom: 150px;
   }
-  &__title{
+  &__title {
     @extend %title-font;
     font-size: 50px;
     line-height: 63px;
-    max-width:  547px;
-    padding:  88px 0px 38px 0px;
+    max-width: 547px;
+    padding: 88px 0px 38px 0px;
     margin: 0 auto;
-    
   }
-  &__items{
+  &__items {
     display: flex;
     padding-bottom: 86px;
   }
-  &__item{
+  &__item {
     max-width: 370px;
     height: 340px;
-    background: #FFFFFF;
-    border-radius: 15px; 
+    background: #ffffff;
+    border-radius: 15px;
     margin-left: 20px;
     padding: 53px 37px 0 37px;
     letter-spacing: 1px;
   }
-  &__item-person-info{
+  &__item-person-info {
     margin: 0 0 25px 80px;
     line-height: 33px;
   }
-  .person-1{
+  .person-1 {
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       background-image: url(../images/testimonial/person1.png);
       position: absolute;
       top: 46px;
@@ -383,10 +311,10 @@ h2 {
       height: 77px;
     }
   }
-  .person-2{
+  .person-2 {
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       background-image: url(../images/testimonial/person2.png);
       position: absolute;
       top: 46px;
@@ -395,10 +323,10 @@ h2 {
       height: 77px;
     }
   }
-  .person-3{
+  .person-3 {
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       background-image: url(../images/testimonial/person3.png);
       position: absolute;
       top: 46px;
@@ -407,64 +335,233 @@ h2 {
       height: 77px;
     }
   }
-  &__item-text{
+  &__item-text {
     line-height: 33px;
   }
 }
-.brands{
-  &__block{
+.brands {
+  &__block {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom:70px;
-    
+    margin-bottom: 70px;
   }
 }
-.projects{
-  &__title{
+.projects {
+  &__inner {
+    margin-bottom: 150px;
+  }
+  &__title {
     @extend %title-font;
     font-size: 50px;
     line-height: 63px;
     margin-bottom: 8px;
     text-align: center;
   }
-  &__text{
+  &__text {
     max-width: 737px;
     text-align: center;
     margin: 0 auto;
     line-height: 33px;
     margin-bottom: 93px;
   }
-  &__items{
+  &__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
-  &__item:nth-child(1){
+  &__item:nth-child(1) {
     margin-bottom: 50px;
   }
-  &__item{
+  &__item {
     margin-left: 50px;
     max-width: 619px;
   }
-  &__item-info{
-    margin-top:24px ;
+  &__item-info {
+    margin-top: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__item-info-title{
+  &__item-info-title {
     @extend %title-font;
     font-size: 25px;
     line-height: 31px;
     margin-bottom: 4px;
     font-weight: 400;
   }
-  &__item-info-category{
+  &__item-info-category {
     line-height: 33px;
   }
 }
+.counter {
+  &__inner {
+    background: #f4f0ec;
+    margin-bottom: 200px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 151px 0 151px 0;
+  }
+  &__item {
+    max-width: 274px;
+    max-height: 155px;
+    border-right: 1px solid #cda274;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    padding: 0 29px 10px 41px;
+  }
+  &__item-number {
+    font-size: 85px;
+    line-height: 107px;
+    color: #cda274;
+  }
+}
+.articles {
+  &__inner {
+    margin-bottom: 200px;
+  }
+  &__title {
+    @extend %title-font;
+    font-size: 50px;
+    line-height: 63px;
+    padding-bottom: 12px;
+  }
+  &__text {
+    line-height: 33px;
+    padding-bottom: 52px;
+    max-width: 811px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 382px;
+    max-height: 521px;
+    padding: 21px;
+    border-radius: 50px;
+    box-shadow: 4px 3px 5px silver;
+    cursor: pointer;
+    &:hover {
+      background: #f4f0ec;
+      transition: 0.5s;
+    }
+  }
+  &__item-title {
+    font-size: 25px;
+    line-height: 31px;
+    @extend %title-font;
+    max-width: 305px;
+    margin-top: 30px;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__data-text {
+    font-size: 16px;
+  }
+  .ml-mr {
+    margin: 0 27px 0 27px;
+  }
+  .articles-1{
+    position: relative;
+    &::before{
+      content:'Kitchan Design';
+      position: absolute;
+      height: 41px;
+      max-width: 300px;
+      left: 30px;
+      bottom: 15px;
+      color: black;
+      background: #ffffff;
+      padding: 4px 10px 8px 11px;
+      font-size: 16px;
+      line-height: 24px;
+      border-radius: 7px 7px 7px 0px;
+      display: flex;
+      align-items: center;
 
-@import 'media';
+    }
+  }
+  .articles-2{
+    position: relative;
+    &::before{
+      content:'Living Design';
+      position: absolute;
+      height: 41px;
+      max-width: 300px;
+      left: 30px;
+      bottom: 15px;
+      color: black;
+      background: #ffffff;
+      padding: 4px 10px 8px 11px;
+      font-size: 16px;
+      line-height: 24px;
+      border-radius: 7px 7px 7px 0px;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+  .articles-3{
+    position: relative;
+    &::before{
+      content:'Interior Design';
+      position: absolute;
+      height: 41px;
+      max-width: 300px;
+      left: 30px;
+      bottom: 15px;
+      color: black;
+      background: #ffffff;
+      padding: 4px 10px 8px 11px;
+      font-size: 16px;
+      line-height: 24px;
+      border-radius: 7px 7px 7px 0px;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+}
+.contacts {
+  &__inner {
+    max-height: 374px;
+    background: #292f36;
+    border-radius: 70px;
+    margin-bottom: 200px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    @extend %title-font;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 63px;
+
+    padding: 80px 0 11px 0;
+  }
+  &__text {
+    color: #ffffff;
+    padding-bottom: 32px;
+  }
+  &__button {
+    @extend %primaryButton;
+  }
+}
+
+@import "media";

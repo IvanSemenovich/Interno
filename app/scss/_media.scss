@@ -100,6 +100,9 @@
     &__info{
         padding-top: 50px;
     }
+    &__title{
+        font-size: 60px;
+    }
 }
     .brands{
         &__block{
@@ -114,9 +117,18 @@
             max-width:310px ;
         }
     }
+    .articles{
+        &__item{
+            margin-top: 16px;
+        }
+        .ml-mr{
+            margin: 15px 0 0 0;
+         }
+    }
+   
 }
 
-@media (max-width: 425px) {
+@media (max-width: 465px) {
     .testimonial{
         &__items{
             margin-right: 15px;
@@ -138,6 +150,25 @@
             padding-top: 15px;
         }
     }
+   .articles{
+    &__inner{
+        margin-bottom: 50px;
+    }
+    .ml-mr{
+        margin: 15px 0px 0px 0px;
+     }
+   }
+   .contacts{
+    &__inner{
+        margin-bottom: 50px;
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &__text{
+        font-size: 16px;
+    }
+   }
 }
 
 

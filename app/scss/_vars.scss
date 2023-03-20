@@ -6,3 +6,74 @@ $primaryColorThree: #F4F0EC;
     color:$primaryColorTwo;
     font-family: "DM Serif Display";    
 }
+%defaultButton{
+    width: 253px;
+    height: 75px;
+    border-radius: 18px;
+    padding:26px, 54px, 26px, 54px;
+    color: #ffffff;
+    background: #292F36;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    &::after{
+        content: '';
+        background-image: url(../images/hero_banner/button-arrow.svg);
+        width: 19px;
+        height: 15px;
+        position: absolute;
+        top: 28px;
+        right: 40px;
+      }
+}
+%largeButton{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 75px;
+    background: $primaryColorTwo;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 22px 56px 26px 31px;
+    border-radius: 18px;
+    max-width: 240px;
+    margin: 47px 0 43px 0;
+    cursor: pointer;
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/hero_banner/button-arrow.svg);
+      width: 19px;
+      position: absolute;
+      height: 15px;
+      right: 39px;
+
+    }
+}
+%primaryButton{
+    padding: 26px 37px 26px 37px;
+    width: 238px;
+     max-height: 75px;
+     border-radius: 18px;
+     color: #FFFFFF;
+     background-color: $primaryColorOne;
+     font-size: 18px;
+     line-height: 22.5px;
+     font-weight: 600;
+     position: relative;
+     margin-bottom: 50px;
+     cursor: pointer;
+     &::after{
+       content: '';
+       background-image: url(../images/arrow.svg);
+       width: 19px;
+       height: 15px;
+       position: absolute;
+       top: 28px;
+       right: 15px;
+     }
+   
+}
