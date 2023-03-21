@@ -47,6 +47,10 @@
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+  background: #ffffff;
+  height: 50px;
+  position: relative;
+  z-index: 9999;
 }
 
 .menu-button-container {
@@ -431,6 +435,9 @@
     font-size: 50px;
     line-height: 63px;
     padding-bottom: 12px;
+
+    display: flex;
+    justify-content: center;
   }
   &__text {
     line-height: 33px;
@@ -474,10 +481,10 @@
   .ml-mr {
     margin: 0 27px 0 27px;
   }
-  .articles-1{
+  .articles-1 {
     position: relative;
-    &::before{
-      content:'Kitchan Design';
+    &::before {
+      content: "Kitchan Design";
       position: absolute;
       height: 41px;
       max-width: 300px;
@@ -491,13 +498,12 @@
       border-radius: 7px 7px 7px 0px;
       display: flex;
       align-items: center;
-
     }
   }
-  .articles-2{
+  .articles-2 {
     position: relative;
-    &::before{
-      content:'Living Design';
+    &::before {
+      content: "Living Design";
       position: absolute;
       height: 41px;
       max-width: 300px;
@@ -511,13 +517,12 @@
       border-radius: 7px 7px 7px 0px;
       display: flex;
       align-items: center;
-
     }
   }
-  .articles-3{
+  .articles-3 {
     position: relative;
-    &::before{
-      content:'Interior Design';
+    &::before {
+      content: "Interior Design";
       position: absolute;
       height: 41px;
       max-width: 300px;
@@ -531,7 +536,6 @@
       border-radius: 7px 7px 7px 0px;
       display: flex;
       align-items: center;
-
     }
   }
 }
@@ -563,5 +567,122 @@
     @extend %primaryButton;
   }
 }
+
+.top-banner{
+  background-image: url(../images/about_us_page/top-banner/top-banner.png);
+  background-repeat: no-repeat;
+  height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 200px;
+  &__info{
+    max-width: 503px;
+    max-height: 178px;
+    padding: 41px 122px 41px 122px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  &__info-title{
+    @extend %title-font;
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+.quotes{
+  &__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+  }
+  &__block{
+    max-width: 875px;
+    border-left: 25px solid #F4F0EC;
+    border-right: 25px solid #F4F0EC;
+    border-radius: 70px;
+
+  }
+  &__info{
+    text-align: center;
+    max-width: 750px;
+    padding: 67px 63px 67px 62px;
+  }
+  &__icon{
+    @extend %title-font;
+    font-style: italic;
+    font-size: 85px;
+    line-height: 107px;
+  }
+  &__text{
+    @extend %title-font;
+    font-size: 35px;
+    line-height: 44px;
+    font-style: italic;
+    margin-bottom: 34px;
+    font-weight: 400;
+  }
+  &__author{
+    font-size: 25px;
+    line-height: 37px;
+    color:  #4D5053
+  }
+}
+.we-do{
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__block-1{
+    display: flex;
+    margin-bottom: 150px;
+  }
+  &__block-2{
+    display: flex;
+  }
+  &__block-img-work{
+    background-image: url(../images/about_us_page/what-we-do/work.jpg);
+    width:659px;
+    height: 377px;
+    border-radius: 70px;
+    
+  }
+  &__block-img-result{
+    background-image: url(../images/about_us_page/what-we-do/result.jpg);
+    width:659px;
+    height: 377px;
+    border-radius: 70px;
+  }
+  &__block-info-1, &__block-info-2{
+    max-width: 500px;
+  }
+  &__block-info-1{
+    margin-right: 41px;
+  }
+  &__block-info-2{
+    margin-left: 90px;
+  }
+  &__block-title{
+    @extend %title-font;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+  &__block-text{
+    line-height: 33px;
+    margin-bottom: 41px;
+  }
+  &__button{
+    @extend %defaultButton;
+  }
+
+
+}
+
 
 @import "media";
