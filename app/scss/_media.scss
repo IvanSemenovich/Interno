@@ -18,18 +18,28 @@
       max-width: 500px;
     }
   }
-  .we-do{
-    &__block-1, &__block-2{
-        flex-direction: column;
-        align-items: center;
+  .we-do {
+    &__block-1,
+    &__block-2 {
+      flex-direction: column;
+      align-items: center;
     }
-    &__block-info-1{
-        margin-bottom: 20px;
-        text-align: center;
+    &__block-info-1 {
+      margin-bottom: 20px;
+      text-align: center;
     }
-    &__block-info-2{
-        margin-top: 20px;
-        text-align: center;
+    &__block-info-2 {
+      margin-top: 20px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  .peoples {
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      margin: 20px;
     }
   }
 }
@@ -156,6 +166,14 @@
       font-size: 30px;
     }
   }
+  .we-do {
+    &__block-img-result {
+      max-width: 450px;
+    }
+    &__block-img-work {
+      max-width: 450px;
+    }
+  }
 }
 
 @media (max-width: 465px) {
@@ -196,6 +214,14 @@
     }
     &__text {
       font-size: 16px;
+    }
+  }
+  .we-do {
+    &__block-img-result {
+      max-width: 350px;
+    }
+    &__block-img-work {
+      max-width: 350px;
     }
   }
 }

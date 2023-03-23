@@ -34,7 +34,8 @@
   margin: 0;
   padding: 0;
   margin-left: 300px;
-  margin: 56px 0px 58px 0px;
+  margin: 56px 0px 27px 0px;
+  align-items: flex-start;
 
   &__link {
     font-size: 20px;
@@ -89,9 +90,7 @@
   margin-top: 8px;
 }
 
-.test {
-  display: flex;
-}
+
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
@@ -106,6 +105,7 @@
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+
 
 .footer {
   &__inner {
@@ -681,7 +681,137 @@
     @extend %defaultButton;
   }
 
+  
+  }
+  .peoples{
+    &__inner{
+      background: #F4F0EC;
+     margin: 173px 0 213px 0;
+    }
+    &__title{
+      @extend %title-font;
+      text-align: center;
+      max-width: 550px;
+      margin: 0 auto;
+      font-size: 50px;
+      line-height: 62px;
+      padding: 185px 0 40px 0;
+     
 
+    }
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 184px;
+    }
+    &__item{
+      width: 285px;
+      height: 433px;
+      margin-right: 20px;
+      
+      &:hover{
+        background: #FFFFFF;
+        transition: all 0.5;
+       
+        .peoples__info{
+          opacity: 1;
+         
+        }
+      }
+     
+    }
+    &__first{
+      background-image: url(../images/about_us_page/peoples/people1.png);
+    }
+    &__second{
+      background-image: url(../images/about_us_page/peoples/people2.png);
+
+    }
+    &__third{
+      background-image: url(../images/about_us_page/peoples/people3.png);
+    }
+    &__fourth{
+      background-image: url(../images/about_us_page/peoples/people4.png);
+    }
+    &__info{
+      padding: 70px 27px 70px 27px;
+      text-align: center;
+      opacity: 0;
+    }
+    &__info-social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 0 66px 36px;
+     
+    }
+    &__info-name{
+      @extend %title-font;
+      font-size: 25px;
+      line-height: 37px;
+      margin-bottom: 3px;
+    }
+    &__info-city{
+      font-size: 18px;
+      line-height: 27px;
+      color: #4D5053;
+      margin-bottom: 66px;
+    }
+    &__info-social-icon{
+      margin-right: 35px;
+      height: 22px;
+
+    }
+    &__info-phone{
+      font-size: 18px;
+      color: #4D5053;
+      margin-bottom: 3px;
+    }
+    &__info-email{
+      font-size: 18px;
+      color: #4D5053;
+    }
+
+}
+.contact-send{
+  &__form{
+    display: flex;
+    justify-content: center;
+  }
+  &__title{
+    @extend %title-font;
+    font-size: 50px;
+    line-height: 63px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 634px;
+    padding-bottom: 77px;
+  }
+  &__form-row{
+    margin-bottom: 57px;
+  }
+
+  &__form-name, &__form-email{
+    border: none;
+    margin-right: 40px;
+    border-bottom: 1px solid #000000;
+    width: 378px;
+    height: 45px;
+  }
+ &__form-text{
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 77px;
+ }
+&__form-btn{
+  display: flex;
+  justify-content: center;
+}
+&__form-button{
+  @extend %defaultButton;
+  margin-bottom: 135px;
+}
 }
 
 
