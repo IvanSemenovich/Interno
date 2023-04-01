@@ -5,3 +5,8 @@
 //         arrows:false
 //     });
 //   } 
+const menuButton = document.getElementById("menu-button");
+const menuList = document.getElementById("menu");
+menuButton.addEventListener('toggle',function(){
+    menuList.style.display="none";
+})

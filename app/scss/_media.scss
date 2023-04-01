@@ -174,6 +174,23 @@
       max-width: 450px;
     }
   }
+  .how-we-work {
+    &__img-container {
+      display: none;
+    }
+    &__items {
+      padding: 0 10px 0 10px;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__info-inner-right {
+      padding: 0px;
+    }
+    &__info-inner-left {
+      padding: 0px;
+    }
+  }
 }
 
 @media (max-width: 465px) {
